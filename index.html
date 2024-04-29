@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS learning</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form class="calculator-form">
+            <input type="text" id="display" placeholder="Waiting intput">
+            <div class="pad">
+                <div class="operators">
+                    <button type="button" onClick="clear()" id="clean">C</button>
+                    <button type="button" onClick="toDisplay('.')">.</button>
+                    <button type="button" onClick="toDisplay('/')">/</button>
+                    <button type="button" onClick="toDisplay('-')">-</button>
+                    <button type="button" onClick="toDisplay('+')">+</button>
+                    <button type="button" onClick="toDisplay('*')">*</button>
+                    <button type="button" onClick="toDisplay('(')">(</button>
+                    <button type="button" onClick="toDisplay(')')">)</button>
+                    <button type="button" onClick="calc()">=</button>
+                </div>
+                <div class="numpad">
+                    <button type="button" onClick="toDisplay('9')">9</button>
+                    <button type="button" onClick="toDisplay('8')">8</button>
+                    <button type="button" onClick="toDisplay('7')">7</button>
+                    <button type="button" onClick="toDisplay('6')">6</button>
+                    <button type="button" onClick="toDisplay('5')">5</button>
+                    <button type="button" onClick="toDisplay('4')">4</button>
+                    <button type="button" onClick="toDisplay('3')">3</button>
+                    <button type="button" onClick="toDisplay('2')">2</button>
+                    <button type="button" onClick="toDisplay('1')">1</button>
+                    <button type="button" onClick="toDisplay('0')">0</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="container">
+            <p class="timerDisplay">00:00:00:00</p> 
+                <div class="buttons">
+                    <button class="start" onclick="start()">Start</button>
+                    <button class="stop" onclick="stop()">Stop</button>
+                    <button class="reset" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
